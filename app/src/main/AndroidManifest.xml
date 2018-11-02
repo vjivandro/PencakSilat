@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.SejarahActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/page_sejarah"/>
+        <activity
+            android:name=".activity.TeknikDasarActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/page_teknik"/>
+        <activity
+            android:name=".activity.KombinasiActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/page_kombinasi"/>
+        <activity
+            android:name=".activity.InfoAplikasi"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/page_info"/>
     </application>
 
 </manifest>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pencak Silat</string>
+    <string name="page_sejarah">Sejarah</string>
+    <string name="page_teknik">Teknik Dasar</string>
+    <string name="page_kombinasi">Kombinasi</string>
+    <string name="page_info">Info Aplikasi</string>
 </resources>

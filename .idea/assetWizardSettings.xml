@@ -56,10 +56,11 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundColor" value="3e3e3e" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="backgroundColor" value="38d6ec" />
                                       <entry key="iconShape" value="CIRCLE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../icon/combine.png" />
-                                      <entry key="outputName" value="ic_info" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../icon/icons8-process.png" />
+                                      <entry key="outputName" value="ic_cara" />
                                     </map>
                                   </option>
                                 </PersistentState>
