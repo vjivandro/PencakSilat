@@ -39,7 +39,7 @@ public class CaraActivity extends AppCompatActivity implements OnPageChangeListe
                 .enableSwipe(true)
                 .pageFitPolicy(FitPolicy.WIDTH)
                 .pageSnap(true)
-                .swipeHorizontal(true)
+                .swipeHorizontal(false)
                 .pageFling(false) // make a fling change only a single page like ViewPager
                 .nightMode(false) // toggle night mode
                 .onPageChange(this)
@@ -53,7 +53,7 @@ public class CaraActivity extends AppCompatActivity implements OnPageChangeListe
     @Override
     public void onPageChanged(int page, int pageCount) {
         pageNumber = page;
-        setTitle(String.format("%s %s / %s", pdfFileName, page + 1, pageCount));
+        //setTitle(String.format("%s %s / %s", pdfFileName, page + 1, pageCount));
     }
 
 
