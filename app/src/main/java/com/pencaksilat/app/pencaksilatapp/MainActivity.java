@@ -19,12 +19,12 @@ import com.pencaksilat.app.pencaksilatapp.activity.InfoAplikasi;
 import com.pencaksilat.app.pencaksilatapp.activity.KombinasiActivity;
 import com.pencaksilat.app.pencaksilatapp.activity.SejarahActivity;
 import com.pencaksilat.app.pencaksilatapp.activity.TeknikDasarActivity;
-import com.pencaksilat.app.pencaksilatapp.helper.Helper;
-import com.pencaksilat.app.pencaksilatapp.model.DashboardModel;
+import com.pencaksilat.app.pencaksilatapp.model.MenuModel;
+import com.pencaksilat.app.pencaksilatapp.utils.ItemDecorationColumns;
 
 import java.util.List;
 
-import static com.pencaksilat.app.pencaksilatapp.helper.Helper.getDashboard;
+import static com.pencaksilat.app.pencaksilatapp.helper.Helper.getMenuDashboard;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        List<DashboardModel> list = getDashboard();
+        List<MenuModel> list = getMenuDashboard();
 
         RecyclerView listRow = (RecyclerView) findViewById(R.id.recyclerview);
 
@@ -48,61 +48,12 @@ public class MainActivity extends AppCompatActivity {
         listRow.addItemDecoration(new ItemDecorationColumns(2, 2));
     }
 
-    private class ItemDecorationColumns extends RecyclerView.ItemDecoration {
-        private int mSizeGridSpacingPx;
-        private int mGridSize;
-        private boolean mNeedLeftSpacing = false;
-
-        public ItemDecorationColumns(int gridSpacingPx, int gridSize) {
-            mSizeGridSpacingPx = gridSpacingPx;
-            mGridSize = gridSize;
-        }
-
-        @Override
-        public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-            int frameWidth = (int) ((parent.getWidth() - (float) mSizeGridSpacingPx * (mGridSize - 1)) / mGridSize);
-            int padding = parent.getWidth() / mGridSize - frameWidth;
-            int itemPosition = ((RecyclerView.LayoutParams) view.getLayoutParams()).getViewAdapterPosition();
-            if (itemPosition < mGridSize) {
-                outRect.top = 0;
-            } else {
-                outRect.top = mSizeGridSpacingPx;
-            }
-            if (itemPosition % mGridSize == 0) {
-                outRect.left = 0;
-                outRect.right = padding;
-                mNeedLeftSpacing = true;
-            } else if ((itemPosition + 1) % mGridSize == 0) {
-                mNeedLeftSpacing = false;
-                outRect.right = 0;
-                outRect.left = padding;
-            } else if (mNeedLeftSpacing) {
-                mNeedLeftSpacing = false;
-                outRect.left = mSizeGridSpacingPx - padding;
-                if ((itemPosition + 2) % mGridSize == 0) {
-                    outRect.right = mSizeGridSpacingPx - padding;
-                } else {
-                    outRect.right = mSizeGridSpacingPx / 2;
-                }
-            } else if ((itemPosition + 2) % mGridSize == 0) {
-                mNeedLeftSpacing = false;
-                outRect.left = mSizeGridSpacingPx / 2;
-                outRect.right = mSizeGridSpacingPx - padding;
-            } else {
-                mNeedLeftSpacing = false;
-                outRect.left = mSizeGridSpacingPx / 2;
-                outRect.right = mSizeGridSpacingPx / 2;
-            }
-            outRect.bottom = 0;
-        }
-    }
-
     private class DasboardAdapter extends RecyclerView.Adapter<DasboardAdapter.ViewHolder>{
 
-        List<DashboardModel> list;
+        List<MenuModel> list;
         Context context;
 
-        public DasboardAdapter(List<DashboardModel> list, Context context) {
+        public DasboardAdapter(List<MenuModel> list, Context context) {
             this.list = list;
             this.context = context;
         }
@@ -110,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         @NonNull
         @Override
         public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-            View view = LayoutInflater.from(context).inflate(R.layout.recycleview_dashboard, viewGroup,false);
+            View view = LayoutInflater.from(context).inflate(R.layout.recycleview_menu, viewGroup,false);
             return new ViewHolder(view);
         }
 

@@ -1,10 +1,10 @@
 package com.pencaksilat.app.pencaksilatapp.model;
 
-public class DashboardModel {
+public class MenuModel {
     private String title;
     private int image;
 
-    public DashboardModel(String title, int image) {
+    public MenuModel(String title, int image) {
         this.title = title;
         this.image = image;
     }

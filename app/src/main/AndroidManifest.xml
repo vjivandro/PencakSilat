@@ -18,20 +18,28 @@
         </activity>
         <activity
             android:name=".activity.SejarahActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/page_sejarah"/>
+            android:label="@string/page_sejarah"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".activity.TeknikDasarActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/page_teknik"/>
+            android:label="@string/page_teknik"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".activity.KombinasiActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/page_kombinasi"/>
+            android:label="@string/page_kombinasi"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".activity.InfoAplikasi"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/page_info"/>
+            android:label="@string/page_info"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.CaraActivity"
+            android:label="@string/page_cara"
+            android:parentActivityName=".activity.KombinasiActivity"/>
+        <activity
+            android:name=".activity.VideoActivity"
+            android:label="@string/page_video"
+            android:parentActivityName=".activity.KombinasiActivity"/>
     </application>
 
 </manifest>
