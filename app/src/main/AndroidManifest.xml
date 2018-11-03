@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pencaksilat.app.pencaksilatapp">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/page_main"/>
         <activity
             android:name=".activity.SejarahActivity"
             android:label="@string/page_sejarah"
@@ -35,11 +43,11 @@
         <activity
             android:name=".activity.CaraActivity"
             android:label="@string/page_cara"
-            android:parentActivityName=".activity.KombinasiActivity"/>
+            android:parentActivityName=".activity.KombinasiActivity" />
         <activity
             android:name=".activity.VideoActivity"
             android:label="@string/page_video"
-            android:parentActivityName=".activity.KombinasiActivity"/>
+            android:parentActivityName=".activity.KombinasiActivity" />
     </application>
 
 </manifest>
