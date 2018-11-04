@@ -13,7 +13,7 @@ import com.pencaksilat.app.pencaksilatapp.R;
 
 public class WebViewActivity extends AppCompatActivity {
 
-    String kode, web_um, web_fik;
+    String kode, web_um, web_fik, web_pp;
 
     WebView webView;
     ConnectivityManager conMgr;
@@ -30,6 +30,7 @@ public class WebViewActivity extends AppCompatActivity {
         kode = getIntent().getStringExtra("kode");
         web_um = getIntent().getStringExtra("um");
         web_fik = getIntent().getStringExtra("fik");
+        web_pp = getIntent().getStringExtra("policy");
 
         if (conMgr.getActiveNetworkInfo() != null
                 && conMgr.getActiveNetworkInfo().isAvailable()
@@ -47,6 +48,9 @@ public class WebViewActivity extends AppCompatActivity {
             } else if (kode.equals("1")) {
                 webView.loadUrl(web_fik);
                 System.out.println("FIK => "+ web_fik);
+            } else if (kode.equals("2")) {
+                webView.loadUrl(web_pp);
+                System.out.println("Policy => "+ web_pp);
             }
 
         } else {

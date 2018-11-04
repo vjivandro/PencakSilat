@@ -14,10 +14,12 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
 
     public String Url_UM = "http://www.um.ac.id";
     public String Url_Fik = "http://www.um.ac.id/page/fakultas-ilmu-keolahragaan";
+    public String Url_Policy = "https://www.freeprivacypolicy.com/privacy/view/cf0f5b8d13e6891405429250e8d77bc5";
     public String kode_um = "0";
     public String kode_fik = "1";
+    public String kode_pp = "2";
 
-    TextView versionTv, tv_link_um, tv_link_fik;
+    TextView versionTv, tv_link_um, tv_link_fik, tv_link_pp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         versionTv = (TextView) findViewById(R.id.tv_versi);
         tv_link_um = (TextView) findViewById(R.id.link_um);
         tv_link_fik = (TextView) findViewById(R.id.link_fik);
+        tv_link_pp = (TextView) findViewById(R.id.privacy_policy);
 
 //        tv_link_um.setText(Url_UM);
 //        tv_link_fik.setText(Url_Fik);
@@ -48,6 +51,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
 
         tv_link_um.setOnClickListener(this);
         tv_link_fik.setOnClickListener(this);
+        tv_link_pp.setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +70,12 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 fik.putExtra("kode", kode_fik);
                 fik.putExtra("fik", Url_Fik);
                 startActivity(fik);
+                break;
+            case R.id.privacy_policy:
+                Intent policy = new Intent(this, WebViewActivity.class);
+                policy.putExtra("kode", kode_pp);
+                policy.putExtra("policy", Url_Policy);
+                startActivity(policy);
                 break;
             default:
                 break;
