@@ -1,5 +1,7 @@
 package com.pencaksilat.app.pencaksilatapp.helper;
 
+import android.view.Menu;
+
 import com.pencaksilat.app.pencaksilatapp.R;
 import com.pencaksilat.app.pencaksilatapp.model.MenuModel;
 
@@ -25,5 +27,15 @@ public class Helper {
         lisKombinasi.add(new MenuModel("Cara", R.mipmap.ic_cara));
         lisKombinasi.add(new MenuModel("Video", R.mipmap.ic_video));
         return lisKombinasi;
+    }
+
+    // Menu Info
+    public static List<MenuModel> getInfoAplikasi(){
+
+        List<MenuModel> listInfo = new ArrayList<MenuModel>();
+        listInfo.add(new MenuModel("Profil", R.mipmap.ic_user));
+        listInfo.add(new MenuModel("Developer", R.mipmap.ic_dev_mobile));
+        listInfo.add(new MenuModel("About", R.mipmap.ic_about_app));
+        return listInfo;
     }
 }

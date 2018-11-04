@@ -74,7 +74,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="paddingPercent" value="30" />
+                                                <entry key="paddingPercent" value="25" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -85,15 +85,20 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="backgroundColor" value="38d6ec" />
-                                      <entry key="iconShape" value="CIRCLE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../icon/icons8-process.png" />
-                                      <entry key="outputName" value="ic_cara" />
+                                      <entry key="backgroundColor" value="f9f9f9" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../Bulutangkis/um_logo.png" />
+                                      <entry key="outputName" value="um_logo" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
