@@ -34,6 +34,7 @@ public class Helper {
 
         List<MenuModel> listInfo = new ArrayList<MenuModel>();
         listInfo.add(new MenuModel("Profil", R.mipmap.ic_user));
+        listInfo.add(new MenuModel("Deskripsi", R.mipmap.ic_descript));
         listInfo.add(new MenuModel("Developer", R.mipmap.ic_dev_mobile));
         listInfo.add(new MenuModel("About", R.mipmap.ic_about_app));
         return listInfo;

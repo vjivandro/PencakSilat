@@ -87,6 +87,8 @@ public class InfoAplikasi extends AppCompatActivity {
                 if (getPosition() == 0) {
                   startActivity(new Intent(v.getContext(), ProfileAcfivity.class));
                 } else if (getPosition() == 1) {
+
+                }else if (getPosition() == 2) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(InfoAplikasi.this);
                     builder.setTitle("Mobile Developer");
                     builder.setIcon(R.mipmap.ic_dev_mobile);
@@ -98,7 +100,7 @@ public class InfoAplikasi extends AppCompatActivity {
                         }
                     });
                     builder.show();
-                } else if (getPosition() == 2) {
+                } else if (getPosition() == 3) {
                     startActivity(new Intent(v.getContext(), AboutActivity.class));
                 }
             }
