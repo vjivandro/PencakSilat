@@ -27,9 +27,6 @@ public class SplashScreen extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        TextView versionTv = (TextView) findViewById(R.id.textView);
-        versionTv.setText("Versi " + String.format(versionName));
-
 
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();

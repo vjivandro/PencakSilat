@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.pencaksilat.app.pencaksilatapp.R;
+import com.pencaksilat.app.pencaksilatapp.helper.Helper;
 import com.pencaksilat.app.pencaksilatapp.model.MenuModel;
 import com.pencaksilat.app.pencaksilatapp.utils.ItemDecorationColumns;
 
@@ -28,7 +29,7 @@ public class KombinasiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kombinasi);
 
-        List<MenuModel> list = getMenuKombinasi();
+        List<MenuModel> list = Helper.getMenuKombinasi();
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
 

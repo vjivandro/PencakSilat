@@ -1,9 +1,11 @@
 package com.pencaksilat.app.pencaksilatapp;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -19,8 +21,10 @@ import android.widget.Toast;
 
 import com.pencaksilat.app.pencaksilatapp.activity.InfoAplikasi;
 import com.pencaksilat.app.pencaksilatapp.activity.KombinasiActivity;
+import com.pencaksilat.app.pencaksilatapp.activity.PetunjukActivity;
 import com.pencaksilat.app.pencaksilatapp.activity.SejarahActivity;
 import com.pencaksilat.app.pencaksilatapp.activity.TeknikDasarActivity;
+import com.pencaksilat.app.pencaksilatapp.helper.Helper;
 import com.pencaksilat.app.pencaksilatapp.model.MenuModel;
 import com.pencaksilat.app.pencaksilatapp.utils.ItemDecorationColumns;
 
@@ -37,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        List<MenuModel> list = getMenuDashboard();
+        List<MenuModel> list = Helper.getMenuDashboard();
 
         RecyclerView listRow = (RecyclerView) findViewById(R.id.recyclerview);
 
@@ -111,10 +115,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        if (back_pressed + 2000 > System.currentTimeMillis()) super.onBackPressed();
-        else Toast.makeText(getBaseContext(), "Tekan Sekali Lagi Untuk Keluar", Toast.LENGTH_SHORT).show();
-        back_pressed = System.currentTimeMillis();
-
+        AlertDialog.Builder builder = new AlertDialog.Builder(this)
+                .setMessage("Anda yakin akan keluar dari aplikasi?")
+                .setCancelable(false)
+                .setPositiveButton("Ya, Keluar!", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        MainActivity.this.finish();
+                    }
+                })
+                .setNegativeButton("Tidak", null);
+        builder.show();
     }
 
     @Override
@@ -134,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         // aksi logout dan mengembalikan ke login page
         if (id == R.id.action_settings) {
-            //startActivity(new Intent(this, AboutActivity.class));
+            startActivity(new Intent(this, PetunjukActivity.class));
         }
 
         return super.onOptionsItemSelected(item);

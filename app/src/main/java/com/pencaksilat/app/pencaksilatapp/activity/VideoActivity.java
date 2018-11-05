@@ -132,7 +132,7 @@ public class VideoActivity extends AppCompatActivity implements YouTubePlayer.On
         } else if (isPortrait) {
             setLayoutSize(listFragment.getView(), MATCH_PARENT, MATCH_PARENT);
             setLayoutSize(videoFragment.getView(), MATCH_PARENT, WRAP_CONTENT);
-            setLayoutSizeAndGravity(videoBox, MATCH_PARENT, WRAP_CONTENT, Gravity.BOTTOM);
+            setLayoutSizeAndGravity(videoBox, MATCH_PARENT, WRAP_CONTENT, Gravity.CENTER);
         } else {
             videoBox.setTranslationY(0); // Reset any translation that was applied in portrait.
             int screenWidth = dpToPx(getResources().getConfiguration().screenWidthDp);
@@ -193,9 +193,9 @@ public class VideoActivity extends AppCompatActivity implements YouTubePlayer.On
             list.add(new VideoEntry("KOMBINASI 10", "LuSJjg-krM0"));
             list.add(new VideoEntry("KOMBINASI 11", "gfLUpL9fZd0"));
             list.add(new VideoEntry("KOMBINASI 12", "6ZfnvKXeez0"));
-            list.add(new VideoEntry("KOMBINASI 12", "N4SCrNcgjyg"));
-            list.add(new VideoEntry("KOMBINASI 12", "VbTrj3ePapY"));
-            list.add(new VideoEntry("KOMBINASI 12", "e4Md3eXtqu8"));
+            list.add(new VideoEntry("KOMBINASI 13", "N4SCrNcgjyg"));
+            list.add(new VideoEntry("KOMBINASI 14", "VbTrj3ePapY"));
+            list.add(new VideoEntry("KOMBINASI 15", "e4Md3eXtqu8"));
 
             VIDEO_LIST = Collections.unmodifiableList(list);
         }

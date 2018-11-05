@@ -10,6 +10,7 @@
     <string name="page_video">Video</string>
     <string name="page_about">About App</string>
     <string name="page_web">Web</string>
+    <string name="page_rule">Petunjuk Aplikasi</string>
 
     <!--Profil User-->
     <string name="paragraf_satu">   Penulis mempunyai nama lengkap Mohammad Khoirul Anas, lahir di Kabupaten Jember pada 07 Juni 1996 silam. Penulis merupakan anak tunggal dari pasangan Bapak Nur Ali dan Ibu Paini. Pendidikannya dimulai dari SDN Gunungsari 02, setelah tamat belajar pendidikan dasar penulis melanjutkan pendidikannya di Pondok Pesantren Darut Tholibin Al-Qodiri 02 Krebet-Gumukmas. Selain berfokus pada pendidikan ilmu agama penulis juga menempuh pendidikan formal di MTs. Al-Qodiri dan melanjutkan pendidikan ke jenjang yang lebih tinggi di MA. Al-Qodiri Gumukmas. Pada tahun 2015 penulis berhasil menyelesaikan pendidikan di MA. Al-Qodiri Gumukmas sebagai wisudawan terbaik. Tidak berbangga dengan pencapaian itu kemudian penulis melanjutkan pendidikan di Perguruan Tinggi Universitas Negeri Malang yang berkonsentrasi di Jurusan Pendidikan Kepelatihan Olahraga.</string>
@@ -22,4 +23,30 @@
 
     <!--action menu-->
     <string name="action_petunjuk">Petunjuk</string>
+
+    <!--Petunjuk-->
+    <string name="rule_pertama">Menu Sejarah</string>
+    <string name="rule_kedua">Menu Teknik Dasar</string>
+    <string name="rule_ketiga">Menu Kombinasi</string>
+    <string name="rule_ketiga_satu">Submenu Cara</string>
+    <string name="rule_ketiga_dua">Submenu Video</string>
+    <string name="rule_keempat">Menu Info Apklikasi</string>
+    <string name="rule_keempat_satu">Submenu Profil</string>
+    <string name="rule_keempat_dua">Submenu Deskripsi</string>
+    <string name="rule_keempat_tiga">Alert Dialog Developer</string>
+    <string name="rule_keempat_empat">Alert Dialog Editor</string>
+    <string name="rule_keempat_lima">Submenu About</string>
+
+    <!--content petunjuk-->
+    <string name="content_sejarah">Menu berisi Materi tentang Sejarah Pencak Silat</string>
+    <string name="content_basic">Menu kumpulan teknik - teknik dasar Pencak Silat</string>
+    <string name="content_kombinasi">Menu yang memiliki dua submenu</string>
+    <string name="content_kombinasi_cara">Submenu berisi tentang variasi latihan beberapa kombinasi</string>
+    <string name="content_kombinasi_video">submenu berisi video yang terintegrasi dengan youtube</string>
+    <string name="content_info_app">Menu yang memiliki dua Submenu dan dua AlertDialog</string>
+    <string name="content_info_app_profil">Submenu tentang profile pemilik aplikasi</string>
+    <string name="content_info_app_deskrip">Submenu deskripsi aplikasi</string>
+    <string name="content_info_app_dev">AlertDialog Developer Mobile Android</string>
+    <string name="content_info_app_editor">AlertDialog Designer</string>
+    <string name="content_info_app_about">Submenu berisi Tentang APlikasi</string>
 </resources>
