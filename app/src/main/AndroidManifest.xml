@@ -61,9 +61,15 @@
             android:label="@string/page_web"
             android:parentActivityName=".activity.InfoAplikasi" />
         <activity
+            android:name=".activity.DeskripsiActivity"
+            android:label="@string/page_about"
+            android:parentActivityName=".activity.InfoAplikasi"/>
+
+
+        <activity
             android:name=".activity.PetunjukActivity"
             android:label="@string/page_rule"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

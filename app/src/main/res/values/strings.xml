@@ -9,6 +9,7 @@
     <string name="page_cara">Cara</string>
     <string name="page_video">Video</string>
     <string name="page_about">About App</string>
+    <string name="page_deskripsi">Deskripsi Aplikasi</string>
     <string name="page_web">Web</string>
     <string name="page_rule">Petunjuk Aplikasi</string>
 
@@ -49,4 +50,7 @@
     <string name="content_info_app_dev">AlertDialog Developer Mobile Android</string>
     <string name="content_info_app_editor">AlertDialog Designer</string>
     <string name="content_info_app_about">Submenu berisi Tentang APlikasi</string>
+
+    <!--Deskrip-->
+    <string name="deskripsi_content">Aplikasi Pencak Silat ini memuat konten utama yang berupa 15 kombinasi tendangan A (depan), T (samping), C (sabit). Adapun konten pendukung dalam aplikasi ini yaitu Sejarah Pencak Silat, Teknik Dasar dan Info Aplikasi, dimana dalam menu Info Aplikasi memuat konten Profil, Deskripsi Aplikasi, Developer, Copyright dan Build Version. Aplikasi ini didedikasikan untuk Keluarga, Para Pelatih Pencak Silat (khususnya PSHT), Atlet Pencak Silat (khususnya PSHT), atau siapa saja yang berkecimpung dalam dunia pencak silat. Semoga dengan adanya aplikasi ini memberikan pengaruh positif untuk kemajuan ilmu pencak silat.</string>
 </resources>

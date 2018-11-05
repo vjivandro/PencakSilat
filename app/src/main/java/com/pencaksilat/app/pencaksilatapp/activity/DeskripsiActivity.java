@@ -3,6 +3,8 @@ package com.pencaksilat.app.pencaksilatapp.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.pencaksilat.app.pencaksilatapp.R;
+
 public class DeskripsiActivity extends AppCompatActivity {
 
     @Override

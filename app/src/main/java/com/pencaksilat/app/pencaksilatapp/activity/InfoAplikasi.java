@@ -86,9 +86,9 @@ public class InfoAplikasi extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (getPosition() == 0) {
-                  startActivity(new Intent(v.getContext(), ProfileAcfivity.class));
+                    startActivity(new Intent(v.getContext(), ProfileAcfivity.class));
                 } else if (getPosition() == 1) {
-
+                    startActivity(new Intent(v.getContext(), DeskripsiActivity.class));
                 }else if (getPosition() == 2) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(InfoAplikasi.this);
                     builder.setTitle("Mobile Developer");
