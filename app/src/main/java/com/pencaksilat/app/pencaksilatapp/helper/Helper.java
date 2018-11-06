@@ -37,7 +37,7 @@ public class Helper {
         listInfo.add(new MenuModel("Profil", R.mipmap.ic_user));
         listInfo.add(new MenuModel("Deskripsi", R.mipmap.ic_descript));
         listInfo.add(new MenuModel("Developer", R.mipmap.ic_dev_mobile));
-        listInfo.add(new MenuModel("Editor", R.mipmap.ic_editor));
+        listInfo.add(new MenuModel("Analyst", R.mipmap.ic_editor));
         listInfo.add(new MenuModel("About", R.mipmap.ic_about_app));
         return listInfo;
     }
@@ -55,7 +55,7 @@ public class Helper {
         ruleModels.add(new RuleModel(R.string.rule_keempat_satu, "Submenu tentang profile pemilik aplikasi", R.mipmap.ic_user));
         ruleModels.add(new RuleModel(R.string.rule_keempat_dua, "Submenu deskripsi aplikasi", R.mipmap.ic_descript));
         ruleModels.add(new RuleModel(R.string.rule_keempat_tiga, "AlertDialog Developer Mobile Android", R.mipmap.ic_dev_mobile));
-        ruleModels.add(new RuleModel(R.string.rule_keempat_empat, "AlertDialog Designer", R.mipmap.ic_editor));
+        ruleModels.add(new RuleModel(R.string.rule_keempat_empat, "AlertDialog Analyst", R.mipmap.ic_editor));
         ruleModels.add(new RuleModel(R.string.rule_keempat_lima, "Submenu berisi Tentang Aplikasi", R.mipmap.ic_about_app));
         return ruleModels;
     }

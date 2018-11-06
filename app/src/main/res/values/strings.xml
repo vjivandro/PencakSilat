@@ -48,7 +48,7 @@
     <string name="content_info_app_profil">Submenu tentang profile pemilik aplikasi</string>
     <string name="content_info_app_deskrip">Submenu deskripsi aplikasi</string>
     <string name="content_info_app_dev">AlertDialog Developer Mobile Android</string>
-    <string name="content_info_app_editor">AlertDialog Designer</string>
+    <string name="content_info_app_editor">AlertDialog Analyst</string>
     <string name="content_info_app_about">Submenu berisi Tentang APlikasi</string>
 
     <!--Deskrip-->

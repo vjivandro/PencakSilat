@@ -103,9 +103,9 @@ public class InfoAplikasi extends AppCompatActivity {
                     builder.show();
                 } else if (getPosition() == 3) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(InfoAplikasi.this);
-                    builder.setTitle("Editor");
+                    builder.setTitle("Analyst");
                     builder.setIcon(R.mipmap.ic_dev_mobile);
-                    builder.setMessage("Eko Hadi Santoso\n082245493396\nekohs2009@gmail.com");
+                    builder.setMessage("Eko Hadi Santoso, Amd.Kom\n082245493396\nekohs2009@gmail.com");
                     builder.setPositiveButton("Oke", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {

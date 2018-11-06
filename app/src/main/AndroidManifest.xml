@@ -62,7 +62,7 @@
             android:parentActivityName=".activity.InfoAplikasi" />
         <activity
             android:name=".activity.DeskripsiActivity"
-            android:label="@string/page_about"
+            android:label="@string/page_deskripsi"
             android:parentActivityName=".activity.InfoAplikasi"/>
 
 
