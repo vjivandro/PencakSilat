@@ -39,8 +39,12 @@
     <string name="rule_keempat_lima">Submenu About</string>
 
     <!--content petunjuk-->
-    <string name="content_sejarah">Menu berisi Materi tentang Sejarah Pencak Silat</string>
-    <string name="content_basic">Menu kumpulan teknik - teknik dasar Pencak Silat</string>
+    <string name="content_sejarah">
+        Menu yang memuat tentang Sejarah Pencak Silat pada jaman Kerajaan-kerajaan, Jaman Kerajaan Islam, Jaman Penjajahan, Jaman Kemerdekaan, Perkembangan Pencak silat di Perguruan Tinggi ASIA dan Pengembangan  Pencak Silat ke ASIAN GAMES
+    </string>
+    <string name="content_basic">
+        Menu yang memuat kontent Teknik Dasar Pencak Silat yang meliputi Pasang, Pola Langkah, Serangan(Serangan tangan meliputi pukulan
+    </string>
     <string name="content_kombinasi">Menu yang memiliki dua submenu</string>
     <string name="content_kombinasi_cara">Submenu berisi tentang variasi latihan beberapa kombinasi</string>
     <string name="content_kombinasi_video">submenu berisi video yang terintegrasi dengan youtube</string>
