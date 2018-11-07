@@ -46,17 +46,17 @@ public class Helper {
     public static List<RuleModel> getRuleApp() {
 
         List<RuleModel> ruleModels = new ArrayList<RuleModel>();
-        ruleModels.add(new RuleModel(R.string.rule_pertama, "Menu berisi Materi tentang Sejarah Pencak Silat", R.mipmap.ic_sejarah));
-        ruleModels.add(new RuleModel(R.string.rule_kedua, "Menu kumpulan teknik - teknik dasar Pencak Silat", R.mipmap.ic_basic));
-        ruleModels.add(new RuleModel(R.string.rule_ketiga, "Menu yang memiliki dua submenu", R.mipmap.ic_combine));
-        ruleModels.add(new RuleModel(R.string.rule_ketiga_satu, "Submenu berisi tentang variasi latihan beberapa kombinasi", R.mipmap.ic_cara));
-        ruleModels.add(new RuleModel(R.string.rule_ketiga_dua, "submenu berisi video yang terintegrasi dengan youtube", R.mipmap.ic_video));
-        ruleModels.add(new RuleModel(R.string.rule_keempat, "Menu yang memiliki dua Submenu dan dua AlertDialog", R.mipmap.ic_info));
-        ruleModels.add(new RuleModel(R.string.rule_keempat_satu, "Submenu tentang profile pemilik aplikasi", R.mipmap.ic_user));
-        ruleModels.add(new RuleModel(R.string.rule_keempat_dua, "Submenu deskripsi aplikasi", R.mipmap.ic_descript));
-        ruleModels.add(new RuleModel(R.string.rule_keempat_tiga, "AlertDialog Developer Mobile Android", R.mipmap.ic_dev_mobile));
-        ruleModels.add(new RuleModel(R.string.rule_keempat_empat, "AlertDialog Analyst", R.mipmap.ic_editor));
-        ruleModels.add(new RuleModel(R.string.rule_keempat_lima, "Submenu berisi Tentang Aplikasi", R.mipmap.ic_about_app));
+        ruleModels.add(new RuleModel("1",R.string.rule_pertama, "Menu berisi Materi tentang Sejarah Pencak Silat", R.mipmap.ic_sejarah));
+        ruleModels.add(new RuleModel("2",R.string.rule_kedua, "Menu kumpulan teknik - teknik dasar Pencak Silat", R.mipmap.ic_basic));
+        ruleModels.add(new RuleModel("3",R.string.rule_ketiga, "Menu yang memiliki dua submenu", R.mipmap.ic_combine));
+        ruleModels.add(new RuleModel("4",R.string.rule_ketiga_satu, "Submenu berisi tentang variasi latihan beberapa kombinasi", R.mipmap.ic_cara));
+        ruleModels.add(new RuleModel("5",R.string.rule_ketiga_dua, "submenu berisi video yang terintegrasi dengan youtube", R.mipmap.ic_video));
+        ruleModels.add(new RuleModel("6",R.string.rule_keempat, "Menu yang memiliki dua Submenu dan dua AlertDialog", R.mipmap.ic_info));
+        ruleModels.add(new RuleModel("7",R.string.rule_keempat_satu, "Submenu tentang profile pemilik aplikasi", R.mipmap.ic_user));
+        ruleModels.add(new RuleModel("8",R.string.rule_keempat_dua, "Submenu deskripsi aplikasi", R.mipmap.ic_descript));
+        ruleModels.add(new RuleModel("9",R.string.rule_keempat_tiga, "AlertDialog Developer Mobile Android", R.mipmap.ic_dev_mobile));
+        ruleModels.add(new RuleModel("10",R.string.rule_keempat_empat, "AlertDialog Analyst", R.mipmap.ic_editor));
+        ruleModels.add(new RuleModel("11",R.string.rule_keempat_lima, "Submenu berisi Tentang Aplikasi", R.mipmap.ic_about_app));
         return ruleModels;
     }
 }
