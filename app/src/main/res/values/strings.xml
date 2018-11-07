@@ -46,42 +46,41 @@
         Menu yang memuat konten Teknik Dasar Pencak Silat yang meliputi Pasang, Pola Langkah, Serangan (serangan tangan meliputi pukulan lurus, pukulan samping dan pukulan sangkol; serangan kaki meliputi tendangan A, tendangan T dan tendangan C) serta Pembelaan (elakan, hindaran, tepisan tangkisan dan tangkapan)
     </string>
     <string name="content_kombinasi">Menu yang memiliki 2 submenu, yaitu Submenu Cara dan Submenu Video</string>
-    <string name="content_kombinasi_cara">Submenu yang memuat konten cara melakukan kombinasi, diantaranya:
-1. tendangan A, tendangan T, tendangan C
-2. tendangan A, tendangan C, tendangan T
-3. tendangan T, tendangan C, tendangan A
-4. tendangan T, tendangan A, tendangan C
-5. tendangan C, tendangan T, tendangan A
-6. pukulan, tendangan A, tendangan T, tendangan C
-7. hindaran, tendangan A, tendangan T, tendangan C
-8. tangkisan, tendangan A, tendangan T, tendangan C
-9. tendangan A, tendangan T, pukulan, tendangan C
-10. tendangan T, tendangan C, pukulan, tendangan A
-11. tangkisan, pukulan, tendangan A, tendangan T, tendangan C
-12. tendangan A, pukulan, tendangan T, pukulan, tendangan C
-13. tendangan T, tendangan A, pukulan, tendangan C, pukulan
-14. hindaran, tendangan A, pukulan, tendangan C, tendangan T
+    <string name="content_kombinasi_cara">Submenu yang memuat konten cara melakukan kombinasi, diantaranya: \n
+1. tendangan A, tendangan T, tendangan C \n
+2. tendangan A, tendangan C, tendangan T \n
+3. tendangan T, tendangan C, tendangan A \n
+4. tendangan T, tendangan A, tendangan C \n
+5. tendangan C, tendangan T, tendangan A \n
+6. pukulan, tendangan A, tendangan T, tendangan C \n
+7. hindaran, tendangan A, tendangan T, tendangan C \n
+8. tangkisan, tendangan A, tendangan T, tendangan C \n
+9. tendangan A, tendangan T, pukulan, tendangan C \n
+10. tendangan T, tendangan C, pukulan, tendangan A \n
+11. tangkisan, pukulan, tendangan A, tendangan T, tendangan C \n
+12. tendangan A, pukulan, tendangan T, pukulan, tendangan C \n
+13. tendangan T, tendangan A, pukulan, tendangan C, pukulan \n
+14. hindaran, tendangan A, pukulan, tendangan C, tendangan T \n
 15. tangkisan, pukulan, tendangan C, tendangan A, hindaran, tendangan T</string>
 
-    <string name="content_kombinasi_video">Submenu yang memuat konten video kombinasi, diantaranya:
-1. tendangan A, tendangan T, tendangan C
-2. tendangan A, tendangan C, tendangan T
-3. tendangan T, tendangan C, tendangan A
-4. tendangan T, tendangan A, tendangan C
-5. tendangan C, tendangan T, tendangan A
-6. pukulan, tendangan A, tendangan T, tendangan C
-7. hindaran, tendangan A, tendangan T, tendangan C
-8. tangkisan, tendangan A, tendangan T, tendangan C
-9. tendangan A, tendangan T, pukulan, tendangan C
-10. tendangan T, tendangan C, pukulan, tendangan A
-11. tangkisan, pukulan, tendangan A, tendangan T, tendangan C
-12. tendangan A, pukulan, tendangan T, pukulan, tendangan C
-13. tendangan T, tendangan A, pukulan, tendangan C, pukulan
-14. hindaran, tendangan A, pukulan, tendangan C, tendangan T
+    <string name="content_kombinasi_video">Submenu yang memuat konten video kombinasi, diantaranya: \n
+1. tendangan A, tendangan T, tendangan C \n
+2. tendangan A, tendangan C, tendangan T \n
+3. tendangan T, tendangan C, tendangan A \n
+4. tendangan T, tendangan A, tendangan C \n
+5. tendangan C, tendangan T, tendangan A \n
+6. pukulan, tendangan A, tendangan T, tendangan C \n
+7. hindaran, tendangan A, tendangan T, tendangan C \n
+8. tangkisan, tendangan A, tendangan T, tendangan C \n
+9. tendangan A, tendangan T, pukulan, tendangan C \n
+10. tendangan T, tendangan C, pukulan, tendangan A \n
+11. tangkisan, pukulan, tendangan A, tendangan T, tendangan C \n
+12. tendangan A, pukulan, tendangan T, pukulan, tendangan C \n
+13. tendangan T, tendangan A, pukulan, tendangan C, pukulan \n
+14. hindaran, tendangan A, pukulan, tendangan C, tendangan T \n
 15. tangkisan, pukulan, tendangan C, tendangan A, hindaran, tendangan T</string>
 
     <string name="content_info_app">Menu yang memuat konten Profil, Deskripsi, Developer, Analyst dan About</string>
-
     <string name="content_info_app_profil">Submenu tentang profile pemilik aplikasi</string>
     <string name="content_info_app_deskrip">Submenu deskripsi aplikasi</string>
     <string name="content_info_app_dev">AlertDialog Developer Mobile Android</string>

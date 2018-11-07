@@ -1,9 +1,6 @@
 package com.pencaksilat.app.pencaksilatapp.activity;
 
 import android.content.Context;
-import android.content.DialogInterface;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +13,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.pencaksilat.app.pencaksilatapp.MainActivity;
 import com.pencaksilat.app.pencaksilatapp.R;
 import com.pencaksilat.app.pencaksilatapp.helper.Helper;
 import com.pencaksilat.app.pencaksilatapp.model.RuleModel;
@@ -104,17 +100,38 @@ public class PetunjukActivity extends AppCompatActivity {
 //                builder.show();
 
                 AlertDialog.Builder alertadd = new AlertDialog.Builder(itemView.getContext());
+                alertadd.setMessage("Detail Petunjuk");
+                alertadd.setIcon(R.mipmap.ic_launcher);
                 LayoutInflater factory = LayoutInflater.from(itemView.getContext());
-                View view = factory.inflate(R.layout.image_dialog, null);
-                ImageView myImage = (ImageView) view.findViewById(R.id.imageview);
+                View view = factory.inflate(R.layout.item_dialog, null);
+                TextView detail_tv = (TextView) view.findViewById(R.id.tv_detail);
                 if (kode.equals("1")) {
-                    myImage.setImageResource(R.mipmap.ic_sejarah);
+                    detail_tv.setText(R.string.content_sejarah);
                 } else if (kode.equals("2")) {
-                    myImage.setImageResource(R.mipmap.ic_basic);
+                    detail_tv.setText(R.string.content_basic);
+                } else if (kode.equals("3")) {
+                    detail_tv.setText(R.string.content_kombinasi);
+                } else if (kode.equals("4")) {
+                    detail_tv.setText(R.string.content_kombinasi_cara);
+                } else if (kode.equals("5")) {
+                    detail_tv.setText(R.string.content_kombinasi_video);
+                } else if (kode.equals("6")) {
+                    detail_tv.setText(R.string.content_info_app);
+                } else if (kode.equals("7")) {
+                    detail_tv.setText(R.string.content_info_app_profil);
+                } else if (kode.equals("8")) {
+                    detail_tv.setText(R.string.content_info_app_deskrip);
+                } else if (kode.equals("9")) {
+                    detail_tv.setText(R.string.content_info_app_dev);
+                } else if (kode.equals("10")) {
+                    detail_tv.setText(R.string.content_info_app_editor);
+                } else if (kode.equals("11")) {
+                    detail_tv.setText(R.string.content_info_app_about);
                 }
 
                 alertadd.setView(view);
                 alertadd.setCancelable(true);
+                alertadd.setPositiveButton("Tutup", null);
                 alertadd.show();
 
             }
