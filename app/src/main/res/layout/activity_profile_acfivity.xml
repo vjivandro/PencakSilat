@@ -22,6 +22,13 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <ImageView
+            android:layout_width="155dp"
+            android:layout_height="125dp"
+            android:src="@drawable/foto_owner"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"/>
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
